@@ -8,3 +8,6 @@
 - methods
   - automatic_brightness_and_contrast(image, clip_hist_percent=25)
   - convertScale(img, alpha, beta)
+  
+### Pathological innovation to support Aatma Nirbhar Bharat.pptx
+- Presentation for the project
