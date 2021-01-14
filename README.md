@@ -1,15 +1,15 @@
 # PlantDisease
-Indus Hackathon 2021 project
+#Indus Hackathon 2021 project
 
 ---
-File info:
+##File info:
 
-imageCorrection.py
+###imageCorrection.py
 
--Use for image correction (brightness and contrast
+- Use for image correction (brightness and contrast
 
--methods
+- methods
 
-automatic_brightness_and_contrast(image, clip_hist_percent=25)
+  - automatic_brightness_and_contrast(image, clip_hist_percent=25)
 
-convertScale(img, alpha, beta)
+  - convertScale(img, alpha, beta)
