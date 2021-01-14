@@ -1,7 +1,5 @@
-# PlantDisease
-# Indus Hackathon 2021 project
+# PlantDisease (Indus Hackathon 2021 project)
 
----
 ## File info:
 
 ### imageCorrection.py
