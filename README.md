@@ -1,10 +1,10 @@
 # PlantDisease
-#Indus Hackathon 2021 project
+# Indus Hackathon 2021 project
 
 ---
-##File info:
+## File info:
 
-###imageCorrection.py
+### imageCorrection.py
 
 - Use for image correction (brightness and contrast
 
