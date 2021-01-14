@@ -2,6 +2,15 @@
 
 ## File info:
 
+### Image Segmentation (trackBar.py)
+- Use to remove background from original images
+- Methods
+  - Tracking
+- Imported
+  - numpy
+  - CV2
+
+
 ### ImageCorrection.py
 
 - Use for image correction (brightness and contrast)
