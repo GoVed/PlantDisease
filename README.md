@@ -35,9 +35,14 @@
 ### PreProcess.py
 - A class which helps to PreProcess images
 - Methods
-  - preProcess(img)
+  - preProcess(img,type='crop',segment_mul=1)
+  - crop_square_center(img)
+  - fill_square_center(img)
 - Imported
   - ImageCorrection
+  - ImageSegmentation
+  - cv2
+  - numpy
   
 ### Pathological innovation to support Aatma Nirbhar Bharat.pptx
 - Presentation for the project
