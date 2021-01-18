@@ -67,11 +67,7 @@ def automatic_brightness_and_contrast(image, clip_hist_percent=25):
     auto_result = convertScale(image, alpha=alpha, beta=beta)
     return auto_result
 
-image = cv2.imread('data/test/PotatoEarlyBlight4.JPG')
 
-auto_result = automatic_brightness_and_contrast(image)
-
-cv2.imwrite('auto_result.png', auto_result)
 
 
 

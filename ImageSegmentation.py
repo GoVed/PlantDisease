@@ -147,6 +147,4 @@ def segmentFF(image,threshold_r=-1,threshold_g=-1,threshold_b=-1,x=127,y=127,sav
         vid.release()
     return res,mask
 
-inp = cv.resize(cv.imread('raw/healthy_leaf/i213.JPG'),(256,256))
-out,mask=segmentFF(inp,save_path='tempAnim/anim.avi',save_rate=75)
-cv.imwrite('tempAnim/final.png',overlayImageOnMask(inp,smoothMask(mask)))
+
