@@ -12,7 +12,7 @@ import numpy as np
 def predict_plant(image,skip_preprocess=False):
     if not skip_preprocess:
         image=PreProcess.preProcess(image)
-    model = keras.models.load_model('plantDet2.h5')
+    model = keras.models.load_model('plantDet3.h5')
     plants = ['Apple','Cherry','Corn','Grape','Peach','PepperBell','Potato','Strawberry']    
     pred = model.predict(np.array([image],dtype=np.float32))[0]
     
@@ -22,12 +22,13 @@ def predict_plant(image,skip_preprocess=False):
         return 'Failed to identify the plant'
     
 def get_disease_model(index):
-    if index==2:
-        return keras.models.load_model('CornDet.h5')
+    modelName=['AppleDet.h5','','CornDet.h5','','','','','']
+    
+    return keras.models.load_model(modelName[index])
     
 def get_disease_names(index):
-    if index==2:
-        return ['Leaf spot','Common rust','Healthy','Leaf blight']
+    disease_names=[['Scab','Black rot','Cedar apple rust','Healthy'],[],['Leaf spot','Common rust','Healthy','Leaf blight'],[],[],[],[],[]]
+    return disease_names[index]
     
 def predict_disease(image,index,plant_name):
     model = get_disease_model(index)
@@ -37,3 +38,8 @@ def predict_disease(image,index,plant_name):
         return plant_name+', '+disease_names[np.argmax(pred)]
     else:
         return plant_name+', '+'Failed to identify the disease'
+  
+# from PIL import Image
+# test1=np.asarray(Image.open('test1.jpg'))
+# test2=np.asarray(Image.open('test2.jpg'))
+# predict_plant(test1)

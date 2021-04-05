@@ -57,7 +57,7 @@ def get_all_images_as_array(dir,batch_size=100,print_status=True):
 
 
 
-def train_detection_model(plant_folder_train,plant_folder_valid,batches=7,batch_size=1000,test_ratio=0.2,epochs=100):
+def train_detection_model(plant_folder_train,plant_folder_valid,batches=10,batch_size=1000,test_ratio=0.2,epochs=100):
 
     #making the model
     model = keras.models.Sequential()
